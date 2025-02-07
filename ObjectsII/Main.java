@@ -18,9 +18,14 @@ public class Main {
         c1.domicilio.poblacion = "Sueca";
         c1.domicilio.provincia = "Valencia";
         c1.anioNacimiento = 1980;
+        c1.concurso.titulo = "Minecraft Hard";
         c1.concurso.fecha.anio = 2025;
         c1.concurso.fecha.mes = 7;
         c1.concurso.fecha.dia = 26;
+        c1.concurso.tiempo.horas = 5;
+        c1.concurso.tiempo.minutos = 30;
+        c1.concurso.tiempo.segundos = 15;
+        c1.concurso.tiempo.centesimas = 200;
 
         c2.nombre.nombre = "Sergi";
         c2.nombre.primerApellido = "Molina";
@@ -34,9 +39,14 @@ public class Main {
         c2.domicilio.poblacion = "Sueca";
         c2.domicilio.provincia = "Valencia";
         c2.anioNacimiento = 2006;
+        c2.concurso.titulo = "RLCS";
         c2.concurso.fecha.anio = 2025;
         c2.concurso.fecha.mes = 8;
         c2.concurso.fecha.dia = 31;
+        c1.concurso.tiempo.horas = 10;
+        c1.concurso.tiempo.minutos = 59;
+        c1.concurso.tiempo.segundos = 30;
+        c1.concurso.tiempo.centesimas = 364;
 
         c3.nombre.nombre = "Inés";
         c3.nombre.primerApellido = "Álvarez";
@@ -50,8 +60,13 @@ public class Main {
         c3.domicilio.poblacion = "Sueca";
         c3.domicilio.provincia = "Valencia";
         c3.anioNacimiento = 2004;
+        c3.concurso.titulo = "La granja de las granjas";
         c3.concurso.fecha.anio = 2025;
         c3.concurso.fecha.mes = 9;
         c3.concurso.fecha.dia = 30;
+        c3.concurso.tiempo.horas = 2;
+        c3.concurso.tiempo.minutos = 30;
+        c3.concurso.tiempo.segundos = 59;
+        c3.concurso.tiempo.centesimas = 100;
     }
 }
