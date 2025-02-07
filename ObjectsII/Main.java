@@ -1,7 +1,5 @@
 package ObjectsII;
 
-import ObjectsIII.Leer;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -102,7 +100,33 @@ public class Main {
                         ", en la población: " + c3.domicilio.poblacion + " con código postal: " + c3.domicilio.codigoPostal + " en la província: " + c3.domicilio.provincia + ". Nació en el " +
                         c3.anioNacimiento + ". Se ha inscrito al concurso: " + c3.concurso.titulo + " que se realizará el: " + c3.concurso.fecha.dia + " de " + c3.concurso.fecha.mes + " del: " +
                         c3.concurso.fecha.anio + ". La duración es de: " + c3.concurso.tiempo.horas + ":" + c3.concurso.tiempo.minutos + ":" + c3.concurso.tiempo.segundos + ":" + c3.concurso.tiempo.centesimas + ".");
+            } else if (opc == 2) {
+                Alumno a1 = new Alumno();
+                Alumno a2 = new Alumno();
+                Alumno a3 = new Alumno();
+            } else if (opc != 0) {
+                System.out.println("ERROR. Número introducido no válido.");
             }
         } while (opc != 0);
     }
+    public static void leerAlumno(Alumno a) {
+        a.num = Leer.leerEntero("Dame el número del alumno: ");
+        a.nombre = Leer.leerTexto("Dame el nombre del alumno: ");
+        a.edad = Leer.leerEntero("Dame la edad del alumno: ");
+        a.curso = Leer.leerEntero("Dame el curso del alumno: ");
+    }
+    public static void imprimirAlumno(Alumno al) {
+        System.out.println("--DATOS DEL ALUMNO--");
+        System.out.println("Número: " + al.num);
+        System.out.println("Nombre: " + al.nombre);
+        System.out.println("Edad: " + al.edad);
+        System.out.println("Curso: " + al.curso);
+    }
+    public static void copiaAlumno(Alumno origen, Alumno destino) {
+        destino = new Alumno(origen);
+    }
+    public static void igualAlumno(Alumno a1, Alumno a2) {
+
+    }
 }
+
