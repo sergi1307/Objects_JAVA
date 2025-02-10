@@ -51,8 +51,8 @@ public class Main {
 
                 System.out.println("Persona 1 es mayor de edad: " + per1.esMayorEdad());
                 System.out.println("Persona 1 es jubilado: " + per1.esJubilado());
-                System.out.println("Persona 2 es mayor de edad: " + per1.esMayorEdad());
-                System.out.println("Persona 2 es jubilado: " + per1.esJubilado());
+                System.out.println("Persona 2 es mayor de edad: " + per2.esMayorEdad());
+                System.out.println("Persona 2 es jubilado: " + per2.esJubilado());
 
             } else if (opc == 3) {
                 Rectangulo rec1 = new Rectangulo(0, 0, 5, 5);
