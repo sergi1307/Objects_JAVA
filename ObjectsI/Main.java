@@ -43,32 +43,17 @@ public class Main {
                 p3.mostrar();
 
             } else if (opc == 2) {
-                Persona per1 = new Persona();
-                Persona per2 = new Persona();
+                Persona per1 = new Persona("20866142J", "Sergi", "Molina Barberá", 18);
+                Persona per2 = new Persona("Inés", 20);
 
-                per1.dni = Leer.leerTexto("Introduzca el DNI con letra de la persona 1: ");
-                per1.nombre = Leer.leerTexto("Introduzca el nombre de la persona 1: ");
-                per1.apellidos = Leer.leerTexto("Introduzca los apellidos de la persona 1: ");
-                per1.edad = Leer.leerEntero("Introduzca la edad de la persona 1: ");
+                per1.mostrar();
+                per2.mostrar();
 
-                System.out.println();
+                System.out.println("Persona 1 es mayor de edad: " + per1.esMayorEdad());
+                System.out.println("Persona 1 es jubilado: " + per1.esJubilado());
+                System.out.println("Persona 2 es mayor de edad: " + per1.esMayorEdad());
+                System.out.println("Persona 2 es jubilado: " + per1.esJubilado());
 
-                per2.dni = Leer.leerTexto("Introduzca el DNI con letra de la persona 2: ");
-                per2.nombre = Leer.leerTexto("Introduzca el nombre de la persona 2: ");
-                per2.apellidos = Leer.leerTexto("Introduzca los apellidos de la persona 2: ");
-                per2.edad = Leer.leerEntero("Introduzca la edad de la persona 2: ");
-
-                if (per1.edad >= 18) {
-                    System.out.println(per1.nombre + " " + per1.apellidos + " con DNI: " + per1.dni + " es mayor de edad.");
-                } else {
-                    System.out.println(per1.nombre + " " + per1.apellidos + " con DNI: " + per1.dni + " no es mayor de edad.");
-                }
-
-                if (per2.edad >= 18) {
-                    System.out.println(per2.nombre + " " + per2.apellidos + " con DNI: " + per2.dni + " es mayor de edad.");
-                } else {
-                    System.out.println(per2.nombre + " " + per2.apellidos + " con DNI: " + per2.dni + " no es mayor de edad.");
-                }
             } else if (opc == 3) {
                 Rectangulo rec1 = new Rectangulo();
                 Rectangulo rec2 = new Rectangulo();
