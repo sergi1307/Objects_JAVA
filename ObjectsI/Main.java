@@ -14,36 +14,34 @@ public class Main {
             opc = Leer.leerEntero("Introduzca que quiere hacer: ");
 
             if (opc == 1) {
-                Punto p1 = new Punto();
-                Punto p2 = new Punto();
-                Punto p3 = new Punto();
+                Punto p1 = new Punto(5, 0);
+                Punto p2 = new Punto(10, 10);
+                Punto p3 = new Punto(-3, 7);
 
-                p1.x = 5;
-                p1.y = 0;
+                System.out.println("Las coordenadas del punto 1 són:");
+                p1.mostrar();
+                System.out.println("Las coordenadas del punto 2 són:");
+                p2.mostrar();
+                System.out.println("Las coordenadas del punto 3 són:");
+                p3.mostrar();
 
-                p2.x = 10;
-                p2.y = 10;
+                p1.desplaza(6, true);
+                p1.desplaza(4, false);
 
-                p3.x = -3;
-                p3.y = 7;
+                p2.desplaza(10, true);
+                p2.desplaza(8, false);
 
-                System.out.println("Las coordenadas del punto 1 són: " + p1.x + " " + p1.y + ".");
-                System.out.println("Las coordenadas del punto 2 són: " + p2.x + " " + p2.y + ".");
-                System.out.println("Las coordenadas del punto 3 són: " + p3.x + " " + p3.y + ".");
-
-                p1.x *= 2;
-                p1.y += 6;
-
-                p2.x -= 3;
-                p2.y *= 4;
-
-                p3.x += 4;
-                p3.y -= 3;
+                p3.desplaza(-3, true);
+                p3.desplaza(9, false);
 
                 System.out.println("Coordenadas actualizadas: ");
-                System.out.println("Las coordenadas del punto 1 són: " + p1.x + " " + p1.y + ".");
-                System.out.println("Las coordenadas del punto 2 són: " + p2.x + " " + p2.y + ".");
-                System.out.println("Las coordenadas del punto 3 són: " + p3.x + " " + p3.y + ".");
+                System.out.println("Las coordenadas del punto 1 són:");
+                p1.mostrar();
+                System.out.println("Las coordenadas del punto 2 són:");
+                p2.mostrar();
+                System.out.println("Las coordenadas del punto 3 són:");
+                p3.mostrar();
+
             } else if (opc == 2) {
                 Persona per1 = new Persona();
                 Persona per2 = new Persona();
