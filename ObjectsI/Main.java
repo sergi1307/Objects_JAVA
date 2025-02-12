@@ -52,8 +52,16 @@ public class Main {
                 p3.mostrar();
 
             } else if (opc == 2) {
-                Persona per1 = new Persona("20866142J", "Sergi", "Molina Barberá", 18);
-                Persona per2 = new Persona("Inés", 20);
+                Persona per1 = new Persona();
+                Persona per2 = new Persona();
+
+                per1.setDni("20866142J");
+                per1.setNombre("Sergi");
+                per1.setApellidos("Molina Barberá");
+                per1.setEdad(18);
+
+                per2.setNombre("Inés");
+                per2.setEdad(20);
 
                 per1.mostrar();
                 per2.mostrar();
