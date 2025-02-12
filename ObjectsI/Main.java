@@ -72,8 +72,18 @@ public class Main {
                 System.out.println("Persona 2 es jubilado: " + per2.esJubilado());
 
             } else if (opc == 3) {
-                Rectangulo rec1 = new Rectangulo(0, 0, 5, 5);
-                Rectangulo rec2 = new Rectangulo(7, 9, -3, 7);
+                Rectangulo rec1 = new Rectangulo();
+                Rectangulo rec2 = new Rectangulo();
+
+                rec1.setX1(0);
+                rec1.setY1(0);
+                rec1.setX2(5);
+                rec2.setY2(5);
+
+                rec2.setX1(7);
+                rec2.setY1(9);
+                rec2.setX2(-3);
+                rec2.setY2(7);
 
                 rec1.mostrar();
                 rec2.mostrar();
